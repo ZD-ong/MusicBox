@@ -39,7 +39,7 @@ function getMusicList(callback){
     //通过Ajax获取数据
     var xhr = new XMLHttpRequest();
     //music.json 发送请求时和当前域名保持一致
-    xhr.open('GET', '/music.json', true);
+    xhr.open('GET', '/MusicBox/music.json', true);
     xhr.onload = function () {
         if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
             callback(JSON.parse(this.responseText));
