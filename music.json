@@ -1,36 +1,23 @@
 [{
-  "src": "http://m10.music.126.net/20170925215223/e05d23408c17a9d9d5ab79bc020aee5e/ymusic/4870/8b7d/d280/acce2ce012e2716d9226a2fcdaabd604.mp3",
-  "title": "Paris",
-  "auther": "The Chainsmokers",
+  "src": "http://cloud.hunger-valley.com/music/玫瑰.mp3",
+  "title": "玫瑰0",
+  "auther": "贰佰",
   "img": "http://cloud.hunger-valley.com/17-9-22/28212907.jpg"
-}, 
- {
-  "src": "http://m10.music.126.net/20170925215359/7dd99cd417505e47d101cd4f190542b3/ymusic/ad40/7077/0dac/6acd18611cab24a05ece47cae171e7fc.mp3",
-  "title": "Sad Story",
-  "auther": "Merk & Kremont",
+}, {
+  "src": "http://cloud.hunger-valley.com/music/ifyou.mp3",
+  "title": "IF YOU1",
+  "auther": "Big Bang",
   "img": "http://cloud.hunger-valley.com/17-9-22/87786461.jpg"
 },
 {
-  "src": "http://m10.music.126.net/20170925215530/42080f37895a26450994730cdf6a6872/ymusic/ad40/7077/0dac/6acd18611cab24a05ece47cae171e7fc.mp3",
-  "title": "Best Behavior",
-  "auther": "Phil Good / Cruels",
+  "src": "http://cloud.hunger-valley.com/music/ifyou.mp3",
+  "title": "IF YOU2",
+  "auther": "Big Bang",
   "img": "http://cloud.hunger-valley.com/17-9-22/87786461.jpg"
 },
 {
-  "src": "http://m10.music.126.net/20170925215956/3968a389684c4aab16bf16f7f9bca4b8/ymusic/dd6b/e54b/0694/adb5608b1b27961a3d8d6d3c0346be56.mp3",
-  "title": "Pink Champagne",
-  "auther": "Nick Lopez",
-  "img": "http://cloud.hunger-valley.com/17-9-22/87786461.jpg"
-},
-{
-  "src": "http://m10.music.126.net/20170925220136/c249b755eaf5185941169136a89fa040/ymusic/7d6b/86cd/6f77/ec104331f1cd14ac217e472bc5abc538.mp3",
-  "title": "I Feel It Coming",
-  "auther": "The Weeknd / Daft Punk",
-  "img": "http://cloud.hunger-valley.com/17-9-22/87786461.jpg"
-},
-{
-  "src": "http://m10.music.126.net/20170925215724/9cb8362d3cde2f7d01397d890252d46b/ymusic/13c2/d9c5/e096/800c52ed8f3be38a74eca3b13dc1d3bc.mp3",
-  "title": "I Miss You",
-  "auther": "Phil Good",
+  "src": "http://cloud.hunger-valley.com/music/ifyou.mp3",
+  "title": "IF YOU3",
+  "auther": "Big Bang",
   "img": "http://cloud.hunger-valley.com/17-9-22/87786461.jpg"
 }]
