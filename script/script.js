@@ -47,12 +47,12 @@ audio.onpause = function(){
 $('.musicbox .stop').onclick = function(){
     if(audio.paused){
         audio.play()
-        this.querySelector('.iconfont').classList.remove('icon-stop');
-        this.querySelector('.iconfont').classList.add('icon-play');
-    }else{
-        audio.pause();
         this.querySelector('.iconfont').classList.remove('icon-play');
         this.querySelector('.iconfont').classList.add('icon-stop');
+    }else{
+        audio.pause();
+        this.querySelector('.iconfont').classList.remove('icon-stop');
+        this.querySelector('.iconfont').classList.add('icon-play');
     }
     
 }
