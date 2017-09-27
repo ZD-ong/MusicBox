@@ -51,12 +51,12 @@ audio.onpause = function(){
 $('.musicbox .stop').onclick = function(){
     if(audio.paused){
         audio.play()
-        this.querySelector('.fa').classList.remove('icon-stop');
-        this.querySelector('.fa').classList.add('icon-play');
+        this.querySelector('.iconfont').classList.remove('icon-stop');
+        this.querySelector('.iconfont').classList.add('icon-play');
     }else{
         audio.pause();
-        this.querySelector('.fa').classList.remove('icon-play');
-        this.querySelector('.fa').classList.add('icon-stop');
+        this.querySelector('.iconfont').classList.remove('icon-play');
+        this.querySelector('.iconfont').classList.add('icon-stop');
     }
     
 }
