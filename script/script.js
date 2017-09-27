@@ -48,9 +48,15 @@ audio.onpause = function(){
 //绑定onclick事件，暂停歌曲
 //谁去绑定事件，this就代表谁
 $('.musicbox .stop').onclick = function(){
-    audio.pause();
-    this.querySelector('iconfont').classList.remove('icon-stop');
-    this.querySelector('iconfont').classList.add('icon-play');
+    if(audio.paused){
+        audio.play()
+        
+    }else{
+        audio.pause();
+        this.querySelector('iconfont').classList.remove('icon-stop');
+        this.querySelector('iconfont').classList.add('icon-play');
+    }
+    
 }
 
 //写一个方便选择元素的函数
