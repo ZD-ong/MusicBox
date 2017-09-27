@@ -13,12 +13,8 @@ audio.autoplay = true;
 
 getMusicList(function(list){
       loadMusic(list[currentIndex]);
-
 })
 
-function start(list){
-    loadMusic(list[currentIndex]);
-}
 
 //当currentTime更新时会触发timeupdate事件
 audio.ontimeupdate = function(){
