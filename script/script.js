@@ -11,10 +11,9 @@ var audio = new Audio();
 audio.autoplay = true;
 //等价于list[0]
 
-getMusicList();
-function star(list){
+getMusicList(function(list){
     loadMusic(list[currentIndex]);
-}
+})
 
 //当currentTime更新时会触发timeupdate事件
 audio.ontimeupdate = function(){
