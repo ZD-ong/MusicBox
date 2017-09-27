@@ -40,6 +40,14 @@ audio.onpause = function(){
     clearInterval(clock);
 }
 
+//绑定onclick事件，暂停歌曲
+//谁去绑定事件，this就代表谁
+$('.music .play').onclick = function(){
+    audio.pause();
+    this.querySelector('iconfont').classList.remove('icon-stop');
+    this.querySelector('iconfont').classList.add('icon-play');
+}
+
 //写一个方便选择元素的函数
 function $(selector){
     return document.querySelector(selector);
