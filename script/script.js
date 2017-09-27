@@ -45,16 +45,19 @@ audio.onpause = function(){
     clearInterval(clock);
 }
 
+var stopbtn = $('icon-stop');
+var playbtn = $('icon-play');
+
 //绑定onclick事件，暂停歌曲
 //谁去绑定事件，this就代表谁
 $('.musicbox .stop').onclick = function(){
     if(audio.paused){
         audio.play()
-        
+        this.stopbtn.classList.remove('icon-stop');
+        this.playbtn.classList.add('icon-play');
     }else{
         audio.pause();
-        this.querySelector('iconfont').classList.remove('icon-stop');
-        this.querySelector('iconfont').classList.add('icon-play');
+        
     }
     
 }
