@@ -11,7 +11,10 @@ var audio = new Audio();
 audio.autoplay = true;
 //等价于list[0]
 
-getMusicList();
+getMusicList(
+function start(list){
+    loadMusic(list[currentIndex]);
+})
 
 function start(list){
     loadMusic(list[currentIndex]);
