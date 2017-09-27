@@ -44,7 +44,7 @@ audio.onpause = function(){
 
 //绑定onclick事件，暂停歌曲
 //谁去绑定事件，this就代表谁
-$('.musicbox .play').onclick = function(){
+$('.musicbox .stop').onclick = function(){
     audio.pause();
     this.querySelector('iconfont').classList.remove('icon-stop');
     this.querySelector('iconfont').classList.add('icon-play');
