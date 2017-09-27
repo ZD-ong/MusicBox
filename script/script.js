@@ -10,22 +10,35 @@ var audio = new Audio();
 //设置自动播放
 audio.autoplay = true;
 //等价于list[0]
-getMusicList(function(list){
+
+getMusicList();
+function star(list){
     loadMusic(list[currentIndex]);
-})
+}
 
 //当currentTime更新时会触发timeupdate事件
 audio.ontimeupdate = function(){
     console.log(this.currentTime);
     //更新进度条
-    $('.musicbox .progress-now').style.width = (this.currentTime/this.duration)*100 + '%';
-    //设置当前时间为通用格式
-    var min = Math.floor(this.currentTime/60);//取分
-    var sec = Math.floor(this.currentTime)%60 + ''//取秒并转化为字符串
-    //判断秒数长度，长度为二输出本身，长度为一在个数前面拼接个零
-    sec = sec.length === 2? sec : '0' + sec;
-    //设置时间跑起来
-    $('.musicbox .time').innerText = min + ':' + sec;
+    $('.musicbox .progress-now').style.width = (this.currentTime/this.duration)*100 + '%';  
+}
+
+//当音乐开始播放时监听play事件
+audio.onplay = function(){
+    //使用setInterval使时间被均匀展示
+    clock = setInterval(function(){
+        //设置当前时间为通用格式
+        var min = Math.floor(audio.currentTime/60);//取分
+        var sec = Math.floor(audio.currentTime)%60 + ''//取秒并转化为字符串
+        //判断秒数长度，长度为二输出本身，长度为一在个数前面拼接个零
+        sec = sec.length === 2? sec : '0' + sec;
+        //设置时间跑起来
+        $('.musicbox .time').innerText = min + ':' + sec;
+    }, 1000)
+}
+
+audio.onpause = function(){
+    clearInterval(clock);
 }
 
 //写一个方便选择元素的函数
